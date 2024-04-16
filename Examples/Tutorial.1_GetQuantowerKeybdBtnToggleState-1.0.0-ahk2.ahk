@@ -96,6 +96,7 @@ https://www.autohotkey.com/boards/viewtopic.php?f=6&t=6517
 
 This library can be distributed for commercial and non-commercial use and I actively encourage both.
 
+
 # AHKv2-Gdip
 This repository contains the GDI+ library (Gdip_All.ahk) compatible with the current [AutoHotKey v2](https://autohotkey.com/v2/).
 
