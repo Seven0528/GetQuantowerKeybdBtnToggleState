@@ -6,3 +6,5 @@ For more details, please refer to the link below.
 - Download images from the AHK forum server and perform [Quantower](https://www.quantower.com/) button image searching.
 ### Version 1.0.1
 - The server for downloading has been changed from the AHK forum server to a GitHub repository.
+---
+![20240416_214825.png](https://raw.githubusercontent.com/Seven0528/GetQuantowerKeybdBtnToggleState/main/20240416_214825.png)
