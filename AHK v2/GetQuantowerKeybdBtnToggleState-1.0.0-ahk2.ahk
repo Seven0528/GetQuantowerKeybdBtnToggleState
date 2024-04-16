@@ -1,4 +1,4 @@
-﻿#Include <Class_iseahound.ImagePut.20240313-1.10.0-d37dd55dd83902f31f1f18502db08b2d49d2b498-ahk2>
+#Include <Class_iseahound.ImagePut.20240313-1.10.0-d37dd55dd83902f31f1f18502db08b2d49d2b498-ahk2>
 #Include <FunctionGroup_buliasz.Gdip_All.20240110-1.61.0-8960b875c4f1064865b51c72978d61e6648c0343-ahk2>
 GetQuantowerKeybdBtnToggleState()    { ;  ahk2.0
     static init:=false, bufNeedleOff, bufNeedleOn
@@ -43,9 +43,9 @@ GetQuantowerKeybdBtnToggleState()    { ;  ahk2.0
         winW:=round(winW*windowDpiScale), winH:=round(winH*windowDpiScale)
     ;------------------
     hbm:=CreateDIBSection(winW, winH), hdc:=CreateCompatibleDC(), obm:=SelectObject(hdc, hbm)
-	PrintWindow(hwnd, hdc)
-	pHaystack:=Gdip_CreateBitmapFromHBITMAP(hbm)
-	SelectObject(hdc, obm), DeleteObject(hbm), DeleteDC(hdc)
+    PrintWindow(hwnd, hdc)
+    pHaystack:=Gdip_CreateBitmapFromHBITMAP(hbm)
+    SelectObject(hdc, obm), DeleteObject(hbm), DeleteDC(hdc)
     bufHaystack:=ImagePutBuffer(pHaystack)
     loop 1    {
         state:=-1
