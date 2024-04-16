@@ -3244,7 +3244,7 @@ WinGetRect( hwnd, &x:="", &y:="", &w:="", &h:="" ) {
 ;  https://www.autohotkey.com/boards/viewtopic.php?t=76633
 GetImagePutLicense()    {
    return "
-(RTrim0
+(LTrim0 RTrim0
 MIT License
 
 Copyright (c) 2020 Edison Hua
