@@ -56,9 +56,9 @@ GetQuantowerKeybdBtnToggleState()    { ;  ahk2.0
         winW:=round(winW*windowDpiScale), winH:=round(winH*windowDpiScale)
     ;------------------
     hbm:=CreateDIBSection(winW, winH), hdc:=CreateCompatibleDC(), obm:=SelectObject(hdc, hbm)
-	PrintWindow(hwnd, hdc)
-	pHaystack:=Gdip_CreateBitmapFromHBITMAP(hbm)
-	SelectObject(hdc, obm), DeleteObject(hbm), DeleteDC(hdc)
+    PrintWindow(hwnd, hdc)
+    pHaystack:=Gdip_CreateBitmapFromHBITMAP(hbm)
+    SelectObject(hdc, obm), DeleteObject(hbm), DeleteDC(hdc)
     bufHaystack:=ImagePutBuffer(pHaystack)
     loop 1    {
         state:=-1
